@@ -111,12 +111,54 @@ tr td{
   padding: 5px 10px;
   font-size: 15px;
 }
-.descricaoPeriodo, .descricaoCodigo{
+.descricaoCurso{
+  width: 25%;
+}
+.descricaoPeriodo,.descricaoCodigo{
+  width: 15%;
+}
+#tabelaAL .descricaoCodigo{
+  width: 25%;
+}
+.descricaoCurso, .descricaoPeriodo, .descricaoCodigo{
   text-align: center;
 }
 
+.informacaoAlunoSemProva{
+  padding: 10px;
+  background-color: #EF7D00;
+  color: #ffffff;
+  font-size: 18px;
+}
+.informacaoSemProva:first-child{
+  font-weight: bolder;
+  margin: 10px 0px;
+}
+.informacaoSemProva{
+  margin: 10px 10px;
+}
+
+.divVoltar{
+  display: flex;
+  padding-top: 20px;
+}
+.campoVoltar{
+  display: flex;
+  margin: auto;
+  padding: 5px 20px;
+  border-radius: 50px;
+  background-color: #EF7D00;
+  font-weight: bolder;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
 .displayNone{
   display: none;
+}
+.nomeVoltar{
+  margin: auto 0px;
 }
 
 @media only screen and (max-width: 915px){
