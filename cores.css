@@ -17,17 +17,23 @@
 .bgBranco{
     background-color: #ffffff;
 }
-.bgBrancoClaro1{
-    background-color: #ffffff79;
-}
 .bgPreto{
     background-color: #000000;
 }
-.bgLaranjaEscuro1{
-    background-color: #FF7514;
+.bgBrancoClaro1{
+    background-color: #666666;
 }
-.bgCinzaEscuro{
-    background-color: #8E9794;
+.bgBrancoClaro2{
+    background-color: #999999;
+}
+.bgBrancoClaro3{
+    background-color: #c9c9c9;
+}
+.bgBrancoClaro4{
+    background-color: #e0e0e0;
+}
+.bgBrancoClaro5{
+    background-color: #f0f0f0;
 }
 
 /* border-color */
@@ -49,17 +55,23 @@
 .bdBranco{
     border-color: #ffffff;
 }
-.bdBrancoClaro1{
-    border-color: #ffffff79;
-}
 .bdPreto{
     border-color: #000000;
 }
-.bdLaranjaEscuro1{
-    border-color: #FF7514;
+.bdBrancoClaro1{
+    border-color: #666666;
 }
-.bdCinzaEscuro{
-    border-color: #8E9794;
+.bdBrancoClaro2{
+    border-color: #999999;
+}
+.bdBrancoClaro3{
+    border-color: #c9c9c9;
+}
+.bdBrancoClaro4{
+    border-color: #e0e0e0;
+}
+.bdBrancoClaro5{
+    border-color: #f0f0f0;
 }
 
 /* color */
@@ -84,9 +96,18 @@
 .txtPreto{
     color: #000000;
 }
-.txtLaranjaEscuro1{
-    color: #FF7514;
+.txtBrancoClaro1{
+    color: #666666;
 }
-.txtCinzaEscuro{
-    color: #8E9794;
+.txtBrancoClaro2{
+    color: #999999;
+}
+.txtBrancoClaro3{
+    color: #c9c9c9;
+}
+.txtBrancoClaro4{
+    color: #e0e0e0;
+}
+.txtBrancoClaro5{
+    color: #f0f0f0;
 }

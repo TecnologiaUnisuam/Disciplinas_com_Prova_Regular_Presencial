@@ -51,9 +51,176 @@ function buscar() {
 
 
     window.scrollTo(0, 9999);
+    
+    var linhaParImpar = document.querySelectorAll("table tr:not(.displayNone)");
+    for (var i = 1; i < linhaParImpar.length; i++) {
+        if (i % 2 === 0) {
+            linhaParImpar[i].classList.add("par");
+        } else {
+            linhaParImpar[i].classList.add("impar");
+        }
+    }
 }
 
 function voltar(){
     document.location.reload(true);
+
+    var linhaParImpar = document.querySelectorAll("table tr:not(.displayNone)");
+    for (var i = 1; i < linhaParImpar.length; i++) {
+        if (i % 2 === 0) {
+            linhaParImpar[i].classList.add("par");
+        } else {
+            linhaParImpar[i].classList.add("impar");
+        }
+    }
+
 }
 
+var linhaParImpar = document.querySelectorAll("table tr:not(.displayNone)");
+for (var i = 1; i < linhaParImpar.length; i++) {
+    if (i % 2 === 0) {
+        linhaParImpar[i].classList.add("par");
+    } else {
+        linhaParImpar[i].classList.add("impar");
+    }
+}
+
+
+
+
+
+  // Adicione um evento de escuta para o campo de pesquisa "procurar1"
+  const inputProcurar1 = document.getElementById('procurar1');
+  inputProcurar1.addEventListener('input', function() {
+    const valorProcurado = inputProcurar1.value.toUpperCase();
+    const tabela = document.querySelector('table');
+    const linhas = tabela.getElementsByTagName('tr');
+
+    for (let i = 2; i < linhas.length; i++) { // Comece em 1 para pular a primeira linha de cabeçalho
+      const celulas = linhas[i].getElementsByTagName('td');
+      const celulaCodigo = celulas[0]; // Coluna
+
+      if (celulaCodigo) {
+        const texto = celulaCodigo.textContent || celulaCodigo.innerText;
+        if (texto.toUpperCase().includes(valorProcurado)) {
+          linhas[i].classList.remove("displayNone");
+        } else {
+          linhas[i].classList.add("displayNone");
+        }
+      }
+    }
+
+    // Defina o estilo de fundo para linhas pares como preto
+    var linhaParImpar = document.querySelectorAll("table tr:not(.displayNone)");
+    for (var i = 1; i < linhaParImpar.length; i++) {
+        if (i % 2 === 0) {
+            linhaParImpar[i].classList.add("par");
+            linhaParImpar[i].classList.remove("impar");
+        } else {
+            linhaParImpar[i].classList.add("impar");
+            linhaParImpar[i].classList.remove("par");
+        }
+    }
+  });
+
+  const inputProcurar2 = document.getElementById('procurar2');
+  inputProcurar2.addEventListener('input', function() {
+    const valorProcurado = inputProcurar2.value.toUpperCase();
+    const tabela = document.querySelector('table');
+    const linhas = tabela.getElementsByTagName('tr');
+
+    for (let i = 2; i < linhas.length; i++) { // Comece em 1 para pular a primeira linha de cabeçalho
+      const celulas = linhas[i].getElementsByTagName('td');
+      const celulaCodigo = celulas[1]; // Coluna
+
+      if (celulaCodigo) {
+        const texto = celulaCodigo.textContent || celulaCodigo.innerText;
+        if (texto.toUpperCase().includes(valorProcurado)) {
+          linhas[i].classList.remove("displayNone");
+        } else {
+          linhas[i].classList.add("displayNone");
+        }
+      }
+    }
+
+    // Defina o estilo de fundo para linhas pares como preto
+    var linhaParImpar = document.querySelectorAll("table tr:not(.displayNone)");
+    for (var i = 1; i < linhaParImpar.length; i++) {
+        if (i % 2 === 0) {
+            linhaParImpar[i].classList.add("par");
+            linhaParImpar[i].classList.remove("impar");
+        } else {
+            linhaParImpar[i].classList.add("impar");
+            linhaParImpar[i].classList.remove("par");
+        }
+    }
+  });
+
+  const inputProcurar3 = document.getElementById('procurar3');
+  inputProcurar3.addEventListener('input', function() {
+    const valorProcurado = inputProcurar3.value.toUpperCase();
+    const tabela = document.querySelector('table');
+    const linhas = tabela.getElementsByTagName('tr');
+
+    for (let i = 2; i < linhas.length; i++) { // Comece em 1 para pular a primeira linha de cabeçalho
+      const celulas = linhas[i].getElementsByTagName('td');
+      const celulaCodigo = celulas[2]; // Coluna
+
+      if (celulaCodigo) {
+        const texto = celulaCodigo.textContent || celulaCodigo.innerText;
+        if (texto.toUpperCase().includes(valorProcurado)) {
+          linhas[i].classList.remove("displayNone");
+        } else {
+          linhas[i].classList.add("displayNone");
+        }
+      }
+    }
+
+    // Defina o estilo de fundo para linhas pares como preto
+    var linhaParImpar = document.querySelectorAll("table tr:not(.displayNone)");
+    for (var i = 1; i < linhaParImpar.length; i++) {
+        if (i % 2 === 0) {
+            linhaParImpar[i].classList.add("par");
+            linhaParImpar[i].classList.remove("impar");
+        } else {
+            linhaParImpar[i].classList.add("impar");
+            linhaParImpar[i].classList.remove("par");
+        }
+    }
+  });
+
+  const inputProcurar4 = document.getElementById('procurar4');
+  inputProcurar4.addEventListener('input', function() {
+    const valorProcurado = inputProcurar4.value.toUpperCase();
+    const tabela = document.querySelector('table');
+    const linhas = tabela.getElementsByTagName('tr');
+
+    for (let i = 2; i < linhas.length; i++) { // Comece em 1 para pular a primeira linha de cabeçalho
+      const celulas = linhas[i].getElementsByTagName('td');
+      const celulaCodigo = celulas[3]; // Coluna
+
+      if (celulaCodigo) {
+        const texto = celulaCodigo.textContent || celulaCodigo.innerText;
+        if (texto.toUpperCase().includes(valorProcurado)) {
+          linhas[i].classList.remove("displayNone");
+        } else {
+          linhas[i].classList.add("displayNone");
+        }
+      }
+    }
+
+    // Defina o estilo de fundo para linhas pares como preto
+    var linhaParImpar = document.querySelectorAll("table tr:not(.displayNone)");
+    for (var i = 1; i < linhaParImpar.length; i++) {
+        if (i % 2 === 0) {
+            linhaParImpar[i].classList.add("par");
+            linhaParImpar[i].classList.remove("impar");
+        } else {
+            linhaParImpar[i].classList.add("impar");
+            linhaParImpar[i].classList.remove("par");
+        }
+    }
+  });
+
+
+  

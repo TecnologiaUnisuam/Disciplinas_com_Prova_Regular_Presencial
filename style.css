@@ -100,14 +100,13 @@ input, textarea{
 }
 tr th{
   color: #ffffff;
-  border-radius: 3px;
+  border-radius: 1px;
   padding: 7px 10px;
   font-size: 17px;
 }
 tr td{
   color: #000000;
-  background-color: #ececec;
-  border-radius: 3px;
+  border-radius: 1px;
   padding: 5px 10px;
   font-size: 15px;
 }
@@ -159,6 +158,15 @@ tr td{
 }
 .nomeVoltar{
   margin: auto 0px;
+}
+
+
+
+.par{
+  background-color: #F0F0F0;
+}
+.impar{
+  background-color: #E0E0E0;
 }
 
 @media only screen and (max-width: 915px){
